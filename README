@@ -1,0 +1,10 @@
+Для компиляции приложения необходимы следуюзие библиотки:
+1. wiringOP (https://github.com/orangepi-xunlong/wiringOP)
+2. libasound2-dev (sudo apt install libasound2-dev)
+Библиотека wiringOP предустановлена на компьютерах "яГрушко".
+
+Компиляция приложения:
+g++ -o app doorbell.cpp forkAndPlay.cpp sound.cpp -lasound -lwiringPi
+
+Запуск приложения:
+sudo ./app
